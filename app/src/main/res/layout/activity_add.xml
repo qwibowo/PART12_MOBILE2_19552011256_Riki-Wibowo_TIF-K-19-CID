@@ -1,0 +1,320 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF" >
+        <TextView
+            android:id="@+id/texthaladd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tambah Laporan Maintenance"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textnamasite"
+                android:text="Nama Site  : "
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/namasite_input"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/entry_nama_site"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/textnamasite" />
+            <requestFocus />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textpelaksana"
+                android:text="Pelaksana Kegiatan  : "
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/pelaksana_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/pelaksana_keg"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/textpelaksana" />
+            <requestFocus />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textjenis"
+                android:text="Jenis Pemeliharaan  : "
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/jenis_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/jenis_pem"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/textjenis" />
+            <requestFocus />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/texttgl"
+                android:textSize="14sp"
+                android:text="Tanggal Pelaksanaan   : "
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/tglawal_input"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:background="@drawable/border"
+                android:hint="awal"
+                android:textSize="14sp"
+                android:inputType="date"
+                android:enabled="false"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/date_awal"
+                android:layout_width="25dp"
+                android:padding="0dp"
+                android:layout_height="25dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:drawableLeft="@drawable/ic_date"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="  s/d  "
+                android:textColor="#fff"/>
+            <EditText
+                android:id="@+id/tglakhir_input"
+                android:layout_width="125dp"
+                android:layout_height="25dp"
+                android:background="@drawable/border"
+                android:hint="akhir"
+                android:textSize="14sp"
+                android:inputType="date"
+                android:enabled="false"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/date_akhir"
+                android:layout_width="25dp"
+                android:padding="0dp"
+                android:layout_height="25dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:drawableLeft="@drawable/ic_date"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/textteknisi"
+                android:textSize="14sp"
+                android:text="Nama Teknisi  : "
+                android:textColor="#fff"/>
+            <EditText
+                android:id="@+id/teknisi_input"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/border"
+                android:hint="Nama Teknisi"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/textdes"
+                android:textSize="14sp"
+                android:text="Deskripsi  : "
+                android:textColor="#fff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <EditText
+                android:id="@+id/deskripsi_input"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:hint="Deskripsi Pekerjaan"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/textkes"
+                android:textSize="14sp"
+                android:text="Kesimpulan  : "
+                android:textColor="#fff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <EditText
+                android:id="@+id/kesimpulan_input"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                android:hint="Kesimpulan"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/textsaran"
+                android:textSize="14sp"
+                android:text="Saran  : "
+                android:textColor="#fff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <EditText
+                android:id="@+id/saran_input"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                android:hint="Saran"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/button"
+                android:padding="4dp"
+                android:text="Tambah"
+                android:textSize="14sp"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

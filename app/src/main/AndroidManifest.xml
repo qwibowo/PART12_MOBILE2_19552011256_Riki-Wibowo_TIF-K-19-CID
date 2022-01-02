@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uas_19552011256_mp2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logoinatews"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/rmbsmall"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UAS_19552011256_Sistem_Pemeliharaan">
+        <activity android:name="com.uas_19552011256_mp2.UpdateActivity"
+            android:label="Laporan Maintenance"
+            android:parentActivityName="com.uas_19552011256_mp2.MainActivity"/>
+        <activity
+            android:name="com.uas_19552011256_mp2.AddActivity"
+            android:label="Laporan Maintenance"
+            android:parentActivityName="com.uas_19552011256_mp2.MainActivity" />
+        <activity
+            android:name="com.uas_19552011256_mp2.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.uas_19552011256_mp2.register_user"
+            android:label="Tambah User"
+            android:parentActivityName="com.uas_19552011256_mp2.loginActivity" />
+        <activity
+            android:name="com.uas_19552011256_mp2.loginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Aplikasi Rental Mainan Bandung</string>
+    <string name="action_settings">Settings</string>
+    <string name="judul">Selamat Datang di,</string>
+    <string name="judul2">Aplikasi Rental Mainan Bandung</string>
+    <string name="warningtxt">Pastikan Anda Mempunyai User Untuk Kelancaran Transakasi...!!! </string>
+
+    <!--
+    <string name="contoh_isi">
+        <item>
+            TNTI
+            - PT. Len Industri
+            - Preventive Maintenance
+            - 21-07-2021
+            - 31-07-2021
+            - Riki Wibowo
+            - Telah dilakukan Kegiatan Pemeliharaan Rutin di Site Ternate - Maluku Utara (TNTI) yang meliputi:
+              1. Pembersihan Perangkat Sensor
+              2. Pembersihan Perangkat Power
+              3. Pembersihan Perangkat Komunikasi
+              4. Crosspool Antena V-sat
+              5. Quality Data
+            - Perangkat Sensor Gempa Bumi di Site Ternate berfungsi dengan Baik
+            - Penggantian Baterai yang sudah obsolete (lebih dari 3 tahun)'</item>
+    </string>
+    -->
+    <string-array name="entry_nama_site">
+        <item>-Pilih Site-</item>
+        <item>BKNI</item>
+        <item>BNDI</item>
+        <item>CISI</item>
+        <item>FAKI</item>
+        <item>GENI</item>
+        <item>GSI</item>
+        <item>JAGI</item>
+        <item>LHMI</item>
+        <item>LUWI</item>
+        <item>MMRI</item>
+        <item>MNAI</item>
+        <item>PLAI</item>
+        <item>PMBI</item>
+        <item>SANI</item>
+        <item>SAUI</item>
+        <item>SMRI</item>
+        <item>SOEI</item>
+        <item>TNTI</item>
+        <item>TOLI</item>
+        <item>UGM</item>
+        <item>SADE</item>
+        <item>TDAL</item>
+    </string-array>
+    <string-array name="pelaksana_keg">
+        <item>-Pilih Pelaksana Kegiatan-</item>
+        <item>PT. Len Industri</item>
+        <item>PT. Mindotama</item>
+        <item>PT. Terindo</item>
+    </string-array>
+    <string-array name="jenis_pem">
+        <item>-Pilih Jenis Pemeliharaan-</item>
+        <item>Preventive Maintenance</item>
+        <item>Corrective Maintenance</item>
+    </string-array>
+</resources>

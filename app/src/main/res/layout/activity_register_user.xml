@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register_user">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160sp"
+        android:background="#FFFFFF"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jud1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/judul"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jud2"
+            android:layout_centerHorizontal="true"
+            android:text="@string/judul2"
+            android:textSize="16sp"
+            android:layout_below="@id/jud1"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/jud2"
+            android:background="@drawable/rmbsmall"></ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="290sp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="Tambah User"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edittext_nama"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/border"
+            android:hint="nama"
+            android:inputType="text"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Username"
+            android:textColor="#fff"/>
+        <EditText
+            android:id="@+id/edittext_username"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/border"
+            android:hint="username"
+            android:inputType="text"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Password"
+            android:textColor="#fff"/>
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/border"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Confirm password"
+            android:textColor="#fff"/>
+        <EditText
+            android:id="@+id/edittext_cinfir_pasword"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/border"
+            android:hint="Confir Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="E-Mail"
+            android:textColor="#fff"/>
+        <EditText
+            android:id="@+id/edittext_email"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/border"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/add"
+                android:layout_width="185dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button"
+                android:padding="4dp"
+                android:text="add"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button"
+                android:padding="6dp"
+                android:text="cancel"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

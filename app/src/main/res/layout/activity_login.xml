@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".loginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:background="#FFFFFF"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jud1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/judul"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jud2"
+            android:layout_centerHorizontal="true"
+            android:text="@string/judul2"
+            android:textSize="15sp"
+            android:layout_below="@id/jud1"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/jud2"
+            android:background="@drawable/rmbsmall"></ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Username"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/edittext_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:hint="username"
+            android:inputType="text"
+            android:paddingLeft="10dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Password"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btlogin"
+                android:layout_width="185dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button"
+                android:padding="6dp"
+                android:text="Log-in"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btexit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button"
+                android:padding="6dp"
+                android:text="exit"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum memiliki akun? Daftar "
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/reg"
+                android:layout_height="wrap_content"
+                android:text="disini"
+                android:textSize="14dp"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
